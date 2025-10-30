@@ -10,47 +10,58 @@
 
 <body class="bg-gray-600">
 
-<!-- Header -->
-<header class="shadow-md bg-gray-600">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <!-- Logo -->
-    <h1 class="text-3xl font-bold text-white tracking-wide">
-      Creaciones <span class="text-red-800">Tucci</span>
-    </h1>
+  <!-- Header -->
+  <header class="shadow-md bg-gray-600 fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <h1 class="text-3xl font-bold text-white tracking-wide">
+        Creaciones <span class="text-red-700">Tucci</span>
+      </h1>
 
-    <!-- Navegación para desktop -->
-    <nav>
-      <ul class="hidden sm:flex space-x-6 font-medium text-center">
-        <li><a href="./index.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Inicio</a></li>
-        <li><a href="./src/Pages/Nosotros.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Nosotros</a></li>
-        <li><a href="./src/Pages/Servicios.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Servicios</a></li>
-        <li><a href="./src/Pages/Catalogo.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Catálogo</a></li>
-        <li><a href="./src/Pages/Contacto.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Contacto</a></li>
+      <!-- Navegación para desktop -->
+      <nav>
+        <ul class="hidden sm:flex space-x-6 font-medium text-center">
+          <li><a href="./index.html"
+              class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Inicio</a></li>
+          <li><a href="./src/Pages/Nosotros.html"
+              class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Nosotros</a></li>
+          <li><a href="./src/Pages/Servicios.html"
+              class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Servicios</a></li>
+          <li><a href="./src/Pages/Catalogo.html"
+              class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Catálogo</a></li>
+          <li><a href="./src/Pages/Contacto.html"
+              class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Icono hamburguesa para móviles -->
+      <button id="mobile-menu-button" class="sm:hidden focus:outline-none">
+        <img src="./src/Icons/bars.svg" alt="Menú" class="w-8 h-8">
+      </button>
+    </div>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-gray-600 px-6 py-4">
+      <ul class="flex flex-col space-y-4 text-center">
+        <li><a href="./index.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Inicio</a>
+        </li>
+        <li><a href="./src/Pages/Nosotros.html"
+            class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Nosotros</a></li>
+        <li><a href="./src/Pages/Servicios.html"
+            class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Servicios</a></li>
+        <li><a href="./src/Pages/Catalogo.html"
+            class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Catálogo</a></li>
+        <li><a href="./src/Pages/Contacto.html"
+            class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Contacto</a></li>
       </ul>
-    </nav>
-
-    <!-- Icono hamburguesa para móviles -->
-    <button id="mobile-menu-button" class="sm:hidden focus:outline-none">
-      <img src="./src/Icons/bars.svg" alt="Menú" class="w-8 h-8">
-    </button>
-  </div>
-
-  <!-- Menú móvil (oculto por defecto) -->
-  <div id="mobile-menu" class="hidden sm:hidden bg-gray-600 px-6 py-4">
-    <ul class="flex flex-col space-y-4 text-center">
-      <li><a href="./index.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Inicio</a></li>
-      <li><a href="./src/Pages/Nosotros.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Nosotros</a></li>
-      <li><a href="./src/Pages/Servicios.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Servicios</a></li>
-      <li><a href="./src/Pages/Catalogo.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Catálogo</a></li>
-      <li><a href="./src/Pages/Contacto.html" class="text-white hover:text-red-500 font-bold text-2xl transition-colors">Contacto</a></li>
-    </ul>
-  </div>
-</header>
+    </div>
+  </header>
   <!-- Main -->
   <main>
     <!-- Hero Section -->
     <section id="inicio" class="bg-gray-700 text-white">
-      <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center md:justify-between text-center md:text-left">
+      <div
+        class="max-w-7xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center md:justify-between text-center md:text-left">
 
         <!-- Texto Hero -->
         <div class="md:w-1/2 space-y-6">
@@ -58,14 +69,16 @@
             Bienvenido a <span class="text-red-800">Creaciones Tucci</span>
           </h2>
           <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
-            Creamos diseños únicos y personalizados para darle vida a tus ideas. 
+            Creamos diseños únicos y personalizados para darle vida a tus ideas.
             Tu creatividad es nuestra inspiración.
           </p>
           <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-            <a href="#servicios" class="bg-red-800 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+            <a href="#servicios"
+              class="bg-red-800 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
               Catálogo
             </a>
-            <a href="#contacto" class="bg-transparent border-2 border-white hover:border-red-800 hover:text-red-800 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+            <a href="#contacto"
+              class="bg-transparent border-2 border-white hover:border-red-800 hover:text-red-800 text-white font-bold py-3 px-6 rounded-lg transition-colors">
               Figura Personalizada
             </a>
           </div>
@@ -73,7 +86,8 @@
 
         <!-- Imagen Hero -->
         <div class="md:w-1/2 mt-10 md:mt-0">
-          <img src="https://placehold.co/600x400/red/white" alt="Hero Image" class="rounded-xl shadow-lg w-full object-cover mx-auto">
+          <img src="https://placehold.co/600x400/red/white" alt="Hero Image"
+            class="rounded-xl shadow-lg w-full object-cover mx-auto">
         </div>
 
       </div>
@@ -84,15 +98,18 @@
       <div class="max-w-7xl mx-auto px-6 text-center">
         <h2 class="text-4xl font-bold mb-4">Explora nuestras colecciones</h2>
         <p class="text-gray-200 text-lg mb-12">
-          Desde héroes legendarios del anime hasta íconos del cine y los videojuegos, descubre figuras únicas diseñadas con detalle y pasión.
+          Desde héroes legendarios del anime hasta íconos del cine y los videojuegos, descubre figuras únicas diseñadas
+          con detalle y pasión.
         </p>
 
         <!-- Grid de colecciones -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-          
+
           <!-- Columna 1 -->
           <div class="bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow text-center">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="https://placehold.co/300x300/red/white?text=Goku" alt="Anime Legends" class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img
+                src="https://placehold.co/300x300/red/white?text=Goku" alt="Anime Legends"
+                class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
             <h3 class="text-2xl font-bold mb-2">Anime Legends</h3>
             <p class="text-gray-300">
               Personajes icónicos traídos a la vida con impresión 3D de alta calidad.
@@ -101,7 +118,8 @@
 
           <!-- Columna 2 -->
           <div class="bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow text-center">
-            <a href="#"><img src="https://placehold.co/300x300/red/white?text=Batman" alt="Heroes & Villains" class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
+            <a href="#"><img src="https://placehold.co/300x300/red/white?text=Batman" alt="Heroes & Villains"
+                class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
             <h3 class="text-2xl font-bold mb-2">Heroes & Villains</h3>
             <p class="text-gray-300">
               Los grandes del cómic en versiones coleccionables únicas.
@@ -110,7 +128,8 @@
 
           <!-- Columna 3 -->
           <div class="bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow text-center">
-            <a href="#"><img src="https://placehold.co/300x300/red/white?text=Kratos" alt="Gaming Legends" class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
+            <a href="#"><img src="https://placehold.co/300x300/red/white?text=Kratos" alt="Gaming Legends"
+                class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
             <h3 class="text-2xl font-bold mb-2">Gaming Legends</h3>
             <p class="text-gray-300">
               Figuras inspiradas en los videojuegos más memorables.
@@ -119,7 +138,8 @@
 
           <!-- Columna 4 -->
           <div class="bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow text-center">
-            <a href="#"><img src="https://placehold.co/300x300/red/white?text=Rick" alt="Series & Cartoons" class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
+            <a href="#"><img src="https://placehold.co/300x300/red/white?text=Rick" alt="Series & Cartoons"
+                class="rounded-lg mb-4 w-full object-cover mx-auto"></a>
             <h3 class="text-2xl font-bold mb-2">Series & Cartoons</h3>
             <p class="text-gray-300">
               Modelos nostálgicos y divertidos que no pueden faltar en tu colección.
@@ -135,7 +155,8 @@
       <div class="max-w-7xl mx-auto px-6 text-center">
         <h2 class="text-4xl font-bold mb-4">El arte detrás de cada figura</h2>
         <p class="text-gray-200 text-lg mb-12">
-          En Creaciones Tucci combinamos tecnología de impresión 3D con acabados artesanales. Cada pieza es creada con precisión, pasión y dedicación.
+          En Creaciones Tucci combinamos tecnología de impresión 3D con acabados artesanales. Cada pieza es creada con
+          precisión, pasión y dedicación.
         </p>
 
         <!-- Grid de procesos -->
@@ -151,7 +172,8 @@
 
           <!-- Columna 2 -->
           <div class="bg-gray-600 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow text-center">
-            <img src="https://placehold.co/100x100/red/white?text=3DPrinter" alt="Impresión en resina" class="mx-auto mb-4">
+            <img src="https://placehold.co/100x100/red/white?text=3DPrinter" alt="Impresión en resina"
+              class="mx-auto mb-4">
             <h4 class="text-2xl font-bold mb-2">Impresión en resina</h4>
             <p class="text-gray-300">
               Usamos tecnología Anycubic para lograr acabados de alta definición.
@@ -177,7 +199,8 @@
         <p class="text-gray-200 text-lg mb-8">
           Cuéntanos tu idea y la convertiremos en una creación 3D exclusiva.
         </p>
-        <a href="#contacto" class="bg-red-800 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
+        <a href="#contacto"
+          class="bg-red-800 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
           Solicitar figura personalizada
         </a>
       </div>
@@ -186,54 +209,52 @@
   </main>
 
   <!-- Footer -->
-<footer class="bg-gray-800 text-gray-200 py-10">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+  <footer class="bg-gray-800 text-gray-200 py-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
-    <!-- Columna 1: Logo y descripción -->
-    <div>
-      <h3 class="text-3xl font-bold mb-3">Creaciones <span class="text-red-800">Tucci</span></h3>
-      <p class="text-gray-400">
-        Figuras únicas hechas con pasión, dedicación y tecnología 3D de alta precisión.
-      </p>
-    </div>
-
-    <!-- Columna 2: Enlaces rápidos -->
-    <div>
-      <h4 class="text-xl font-semibold mb-3 text-white">Enlaces</h4>
-      <ul class="space-y-2">
-        <li><a href="#inicio" class="hover:text-red-500 transition-colors">Inicio</a></li>
-        <li><a href="#colecciones" class="hover:text-red-500 transition-colors">Colecciones</a></li>
-        <li><a href="#como-trabajamos" class="hover:text-red-500 transition-colors">Cómo trabajamos</a></li>
-        <li><a href="#contacto-rapido" class="hover:text-red-500 transition-colors">Contacto</a></li>
-      </ul>
-    </div>
-
-    <!-- Columna 3: Redes sociales -->
-    <div>
-      <h4 class="text-xl font-semibold mb-3 text-white">Síguenos</h4>
-      <div class="flex justify-center md:justify-start space-x-4">
-        <a href="#" class="hover:text-red-500 transition-colors">
-          <img src="/src/Icons/facebook.svg" alt="Facebook" class="w-6 h-6">
-        </a>
-        <a href="#" class="hover:text-red-500 transition-colors">
-          <img src="/src/Icons/instagram.svg" alt="Instagram" class="w-6 h-6">
-        </a>
-        <a href="#" class="hover:text-red-500 transition-colors">
-          <img src="/src/Icons/tiktok.svg" alt="TikTok" class="w-6 h-6">
-        </a>
+      <!-- Columna 1: Logo y descripción -->
+      <div>
+        <h3 class="text-3xl font-bold mb-3">Creaciones <span class="text-red-800">Tucci</span></h3>
+        <p class="text-gray-400">
+          Figuras únicas hechas con pasión, dedicación y tecnología 3D de alta precisión.
+        </p>
       </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div>
+        <h4 class="text-xl font-semibold mb-3 text-white">Enlaces</h4>
+        <ul class="space-y-2">
+          <li><a href="#inicio" class="hover:text-red-500 transition-colors">Inicio</a></li>
+          <li><a href="#colecciones" class="hover:text-red-500 transition-colors">Colecciones</a></li>
+          <li><a href="#como-trabajamos" class="hover:text-red-500 transition-colors">Cómo trabajamos</a></li>
+          <li><a href="#contacto-rapido" class="hover:text-red-500 transition-colors">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes sociales -->
+      <div>
+        <h4 class="text-xl font-semibold mb-3 text-white">Síguenos</h4>
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="#" class="hover:text-red-500 transition-colors">
+            <img src="/src/Icons/facebook.svg" alt="Facebook" class="w-6 h-6">
+          </a>
+          <a href="#" class="hover:text-red-500 transition-colors">
+            <img src="/src/Icons/instagram.svg" alt="Instagram" class="w-6 h-6">
+          </a>
+          <a href="#" class="hover:text-red-500 transition-colors">
+            <img src="/src/Icons/tiktok.svg" alt="TikTok" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+
     </div>
 
-  </div>
-
-  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-400">
-    <p>© 2025 Creaciones Tucci. Todos los derechos reservados.</p>
-  </div>
-</footer>
+    <div class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-400">
+      <p>© 2025 Creaciones Tucci. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <script src="/src/main.js"></script>
-
-
 </body>
 
 </html>
